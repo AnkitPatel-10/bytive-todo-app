@@ -21,11 +21,11 @@ app.get("/", (req, res) => {
 });
 
 // ROUTES
-app.use('/todos', todoRoutes);      //TODO Routes
-app.use('/todos/auth', userRoutes);        //AUTH Routes
+app.use('/tasks', todoRoutes);      //TODO Routes
+app.use('/tasks/auth', userRoutes);        //AUTH Routes
 
 //Connection with MONGODB using MONOGO URL
-const connectDb = async() => {
+const connectDb = async () => {
     await mongoose.connect(process.env.MDB_URL).then(() => {
         console.log("Connected to MongoDB");
     }).catch((err) => {
@@ -34,7 +34,7 @@ const connectDb = async() => {
 }
 
 //Connecting with Server
-app.listen(process.env.PORT || 5000 , () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log(`Server is running on http://localhost:${process.env.PORT}`);
     connectDb();
 });
