@@ -7,8 +7,6 @@
  - Added JWT-based authentication for API enpoints.
  - Validate the data for backend using [Joi](https://www.npmjs.com/package/joi).
         
- ## Instructions
- 
  ## Endpoints:
  Tasks Routes-
  1. GET ("/tasks) : Fetch all tasks of the user.
@@ -61,6 +59,23 @@ Start in Development Mode
 To start the server with live reload (via nodemon):
   ```bash
   npm run dev
-
 ```
+## Instructions
+ This is only backend part of the project so use Postman for testing.
+### Testing with Postman
+Follow these steps to test your API:
+
+1. Download and Install Postman
+   Download [Postman](https://www.postman.com/downloads) from the official website.
+   Install and open the application.
+2. Set Up Your Local Server
+   Start your backend server:
+   ```bash
+   npm start
+   ```
+   Confirm the server is running at http://localhost:5000 (or the port specified in your .env).
+3. Create a Postman Collection
+   Open Postman and create a new collection (e.g., To-Do List API).
+   Inside the collection, create requests for each API endpoint.
+
 
