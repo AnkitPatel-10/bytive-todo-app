@@ -1,18 +1,27 @@
 # Bytive - Todo-list Application
- Assignment by Bytive Technology 
+ Assignment by Bytive Technology Private Limited
  ## Backend Development Task
- Backend framework used : Node.js/Express \
- Database Used : MongoDb ( NoSQL ) \
- Bonus : Added JWT-based authentication for API enpoints
+ Backend framework used : Node.js/[Express](https://expressjs.com/) \
+ Database Used : [MongoDb](https://www.mongodb.com/atlas)( NoSQL ) \
+ Bonus : 
+ - Added JWT-based authentication for API enpoints.
+ - Validate the data for backend using [Joi](https://www.npmjs.com/package/joi).
+        
  ## Instructions
  
  ## Endpoints:
+ Tasks Routes-
  1. GET ("/tasks) : Fetch all tasks of the user.
  2. POST ("/tasks) : Create a new task.
  3. GET ("/tasks/:id) : Show a specific task by fetching it using the id.
  4. PUT ("/tasks/"id) : Update a specific task by fetching it using the id.
  4. DELETE ("/tasks/"id) : Delete a specific task by fetching it using the id.
 
+ User Routes-
+ 1. POST ("/tasks/auth/register") : Register user using email , username and password
+ 2. POST ("/tasks/auth/login") : Login user using email and password.
+ 3. POST ("/tasks/auth/logout") : Logout user using email.
+    
 ## Prerequisites
 
 Before running this application, ensure you have the following installed:
@@ -52,3 +61,6 @@ Start in Development Mode
 To start the server with live reload (via nodemon):
   ```bash
   npm run dev
+
+```
+
